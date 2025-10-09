@@ -7,73 +7,216 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link href="styles.css" rel="stylesheet">
-        <title>projects + stuff im working on</title>
+        <title>projects - michael chang</title>
     </head>
-    <body>
-        <div class='header'>
-            <h1>projects + stuff im working on</h1>
-        </div>
+    <body class="fade-in">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">blah</a>
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="index.html">home</a>
+                        <a class="nav-link" href="index.html"><strong>michael chang</strong></a>
+                        <a class="nav-link" href="about.html">about</a>
                         <a class="nav-link active" aria-current="page" href="projects.html">projects</a>
                         <a class="nav-link" href="builds.html">builds</a>
-                        <a class="nav-link" href="alkLFG.html">alkLFG</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <hr>
-        <div class="container-fluid">
-            <h2>godot projects</h2>
-            <p>Small projects made while learning how to make games in godot</p>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card text-bg-warning mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">2D Creeper Game - Godot tutorial</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="main-container container" id="main">
+            <div class="row-container container">
+                <!-- Side navigation -->
+                <div class="sidebar sticky">
+                    <div class="author__avatar">
+                        <img src="assets/slep.jpg" class="author__avatar" alt="michael chang">
                     </div>
+                    <div class="author__content">
+                        <h3 class="author__name">Michael Chang</h3>
+                        <p class="author__bio">lighting + pipeline td</p>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card text-bg-warning mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">3D Creeper Game - Godot tutorial</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                    <div class="author__urls-wrapper">
+                        <ul class="author__urls social-icons">
+                            <li><i class="bi bi-map" aria-hidden="true"></i> East Bay California</li>
+                            <li><i class="bi bi-chevron-right" aria-hidden="true"></i> looking for work</li>
+                            <li><a href="mailto:michaelchang@alumni.purdue.edu"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/michael-chang-90b59013b/" target="_blank"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                            <li><a href="https://github.com/mchang-orz" target="_blank"><i class="bi bi-github" aria-hidden="true"></i> Github</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card text-bg-dark mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Keep Away game</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    </div>
+                <!--main content-->
+                <div class="main-content">
+                    <h1>projects</h1>
+                    <hr>
+                    <h2>godot projects</h2>
+                    <p>currently learning to make games in Godot</p>
+                    <div class="row row-cols-1 row-cols-lg-1 g-3">
+                        <div class="col">
+                            <div class="card text-bg-dark mb-3">
+                                <img src="assets/dodge-creeps.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">2D Creeper Game - Godot tutorial</h5>
+                                    <p class="card-text">first project made following Godot tutorial docs, focused on 2D workflows, sprites, basic controls.</p>
+                                    <a href="https://github.com/mchang-orz/dodge-creeps" target="_blank" class="btn btn-primary" title="if you want my files for some reason">
+                                        <i class="bi bi-github me-2"></i>github repo
+                                    </a>
+                                    <a href="assets/dodge_creeps_build.zip" target="_blank" download class="btn btn-primary" title="zip download">
+                                        <i class="bi bi-cloud-download me-2"></i>download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark mb-3">
+                                <img src="assets/3d_squash_creeps.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">3D Creeper Game - Godot tutorial</h5>
+                                    <p class="card-text">second project made following godot tutorials. focus was on 3D workflows, characters, 3d physics.</p>
+                                    <a href="https://github.com/mchang-orz/3d_squash_the_creeps_starter" target="_blank" class="btn btn-primary" title="if you want my files for some reason">
+                                        <i class="bi bi-github me-2"></i>github repo
+                                    </a>
+                                    <a href="assets/3d_dodge_creeps_build.zip" target="_blank" download class="btn btn-primary" title="zip download">
+                                        <i class="bi bi-cloud-download me-2"></i>download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark mb-3">
+                                <img src="assets/keep-away.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Keep Away game</h5>
+                                    <p class="card-text">first actual small game of "keep away". learning to use physics objects and mouse dragging</p>
+                                    <a href="https://github.com/mchang-orz/keep-away-game" target="_blank" class="btn btn-primary" title="if you want my files for some reason">
+                                        <i class="bi bi-github me-2"></i>github repo
+                                    </a>
+                                    <a href="assets/keep_away_build.zip" target="_blank" download class="btn btn-primary" title="zip download">
+                                        <i class="bi bi-cloud-download me-2"></i>download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-dark mb-3">
+                                <img src="assets/hand-turtle.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">"Hand" Turtle game WIP</h5>
+                                    <p class="card-text">wip of second game. i suck at modeling / animating still so just placeholder cube and colors for now to represent animations.</p>
+                                    <a href="https://github.com/mchang-orz/turtle-game" target="_blank" class="btn btn-primary" title="if you want my files for some reason">
+                                        <i class="bi bi-github me-2"></i>github repo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h2>old projects</h2>
+                        <p>college work, ancient animations</p>
+                        <div class="col">
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="2560" height="741" src="https://www.youtube.com/embed/84W5cjEz1Ys" title="DemoCryo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <h5 class="card-title">CryoEM</h5>
+                                    <p class="card-text">college project, VR training tool in collaboration with biology department.</p>
+                                    <!--add page link here for cryoEM-->
+                                    <a href="https://cryoem.bio.purdue.edu/" target="_blank" class="btn btn-primary" title="more info">
+                                        <i class="bi bi-info-circle-fill me-2"></i>more info
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="2560" height="741" src="https://www.youtube.com/embed/j-ZwAB8nXu8" title="CGT 247 Final" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <h5 class="card-title">houdini fx class project</h5>
+                                    <p class="card-text">old houdini fx project for class. its shit lmao.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="2560" height="741" src="https://www.youtube.com/embed/fsScpnPx4tA" title="no signal" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <h5 class="card-title">no signal</h5>
+                                    <p class="card-text">ancient history, old premiere animation. xdd</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="2560" height="741" src="https://www.youtube.com/embed/TpGlute6GCk" title="Happy Holidays!" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <h5 class="card-title">holidays 2015</h5>
+                                    <p class="card-text">ancient holiday animation for family.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe width="2560" height="741" src="https://www.youtube.com/embed/IPF_5OZFqas" title="travelAnimation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <h5 class="card-title">Trip? animation</h5>
+                                    <p class="card-text">ancient short animation about some trip i took.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card text-bg-dark mb-3">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">"Hand" Turtle game</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
+            </div>
         </div>
-        <div class="container-fluid">
-            <h2>old old old stuff</h2>
+        <!--footer-->
+        <div class="footer-wrapper">
+            <footer>
+                <div class="footer-copyright">
+                    © 2025 Michael Chang. styling elements inspired by
+                    <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of
+                    <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+                </div>
+            </footer>
         </div>
+
+        <!--scroll to top-->
+         <button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top">
+            <i class="bi bi-caret-up-fill"></i>
+        </button>
+        <script>
+            //Get the button
+            let mybutton = document.getElementById("btn-back-to-top");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            mybutton.addEventListener("click", backToTop);
+
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </body>
 </html>

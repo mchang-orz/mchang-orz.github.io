@@ -7,36 +7,96 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link href="styles.css" rel="stylesheet">
-        <title>michael's blah and bleh</title>
+        <title>michael chang</title>
     </head>
-    <body>
-        <div class='header'>
-            <h1>blahblahblah</h1>
-        </div>
+    <body class="fade-in">
+        <!--navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">blah</a>
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html"><strong>michael chang</strong></a>
+                        <a class="nav-link" href="about.html">about</a>
                         <a class="nav-link" href="projects.html">projects</a>
                         <a class="nav-link" href="builds.html">builds</a>
-                        <a class="nav-link" href="alkLFG.html">alkLFG</a>
                     </div>
                 </div>
             </div>
         </nav>
-
-        <div class="container-fluid">
-            <h2>
-                hello this is my home page
-            </h2>
-            <h2>About</h2>
-            <p>hello i am michael</p>
-            <p>the following pages have stuff that i am working on, character builds i've made, and some other things</p>
+        <!--page content-->
+        <div class="main-container container" id="main">
+            <div class="row-container container">
+                <!-- Side navigation -->
+                <div class="sidebar sticky">
+                    <div class="author__avatar">
+                        <img src="assets/slep.jpg" class="author__avatar" alt="michael chang">
+                    </div>
+                    <div class="author__content">
+                        <h3 class="author__name">Michael Chang</h3>
+                        <p class="author__bio">lighting + pipeline td</p>
+                    </div>
+                    <div class="author__urls-wrapper">
+                        <ul class="author__urls social-icons">
+                            <li><i class="bi bi-map" aria-hidden="true"></i> East Bay California</li>
+                            <li><i class="bi bi-chevron-right" aria-hidden="true"></i> looking for work</li>
+                            <li><a href="mailto:michaelchang@alumni.purdue.edu"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/michael-chang-90b59013b/" target="_blank"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                            <li><a href="https://github.com/mchang-orz" target="_blank"><i class="bi bi-github" aria-hidden="true"></i> Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--article content-->
+                <div class="main-content">
+                    <p>hello i'm michael chang. I am a pipeline / lighting td currently looking for work. I've worked at Company 3 Method, Alchemic Ltd, and as a freelancer for Zoetic Media LLC.
+                        In my free time i am learning to make <a href="projects.html">games</a> and practicing <a href="https://cs50.harvard.edu/x/" target="_blank">coding</a>. I also play games with my friends and family.
+                    </p>
+                </div>
+            </div>
         </div>
+        <!--footer-->
+        <div class="footer-wrapper">
+            <footer>
+                <div class="footer-copyright">
+                    © 2025 Michael Chang. styling elements inspired by
+                    <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of
+                    <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+                </div>
+            </footer>
+        </div>
+
+        <!--scroll to top-->
+        <button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top">
+            <i class="bi bi-caret-up-fill"></i>
+        </button>
+        <script>
+            //Get the button
+            let mybutton = document.getElementById("btn-back-to-top");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            mybutton.addEventListener("click", backToTop);
+
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </body>
 </html>

@@ -7,93 +7,122 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link href="styles.css" rel="stylesheet">
-        <title>poe + poe2 characters</title>
+        <title>path of exile builds - michael chang</title>
     </head>
-    <body>
-        <div class='header'>
-            <h1>builds [poe1] + [poe2]</h1>
-        </div>
+    <body class="fade-in">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">blah</a>
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="index.html">home</a>
+                        <a class="nav-link" href="index.html"><strong>michael chang</strong></a>
+                        <a class="nav-link" href="about.html">about</a>
                         <a class="nav-link" href="projects.html">projects</a>
-                        <a class="nav-link" active" aria-current="page" href="builds.html">builds</a>
-                        <a class="nav-link" href="alkLFG.html">alkLFG</a>
+                        <a class="nav-link active" aria-current="page" href="builds.html">builds</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <hr>
-        <div class="container-fluid">
-            <a type="button" class="btn btn-primary" href="#poe1">Path of Exile</a>
-            <a type="button" class="btn btn-primary" href="#poe2">Path of Exile 2</a>
-            <hr>
-            <section id="poe1">
-                <h2>poe characters</h2>
-                <p>some characters from past leagues of Path of Exile.</p>
-            </section>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-dark">
-                        <i class="bi bi-gear-wide-connected me-2"></i>Builds
-                    </button>
-                    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dce5">Settlers of Kalguur</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dce6">Legacy of Phrecia</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dce7">Delirium</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd1c">Necropolis</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd1f">Expedition</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd1b">Sanctum</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd19">Metamorph</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd18">Ritual</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd17">Harvest</a></li>
-                        <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd1a">Crucible</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" target="_blank" href="https://www.pathofexile.com/account/view-profile/sinemora-4527/characters">Full Profile</a></li>
-                    </ul>
+        <div class="main-container container" id="main">
+            <div class="row-container container">
+                <!-- Side navigation -->
+                <div class="sidebar sticky">
+                    <div class="author__avatar">
+                        <img src="assets/slep.jpg" class="author__avatar" alt="michael chang">
+                    </div>
+                    <div class="author__content">
+                        <h3 class="author__name">Michael Chang</h3>
+                        <p class="author__bio">lighting + pipeline td</p>
+                    </div>
+                    <div class="author__urls-wrapper">
+                        <ul class="author__urls social-icons">
+                            <li><i class="bi bi-map" aria-hidden="true"></i> East Bay California</li>
+                            <li><i class="bi bi-chevron-right" aria-hidden="true"></i> looking for work</li>
+                            <li><a href="mailto:michaelchang@alumni.purdue.edu"><i class="bi bi-envelope-fill" aria-hidden="true"></i> Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/michael-chang-90b59013b/" target="_blank"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                            <li><a href="https://github.com/mchang-orz" target="_blank"><i class="bi bi-github" aria-hidden="true"></i> Github</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <hr>
-                <div class="container-fluid">
-                    <iframe name="poe1frame" id="poe1Frame"
-                    src="https://poe.ninja/pob/7dce5"
-                    width=1200
-                    height=800
-                    title="Character">
-                    </iframe>
+                <!--page content-->
+                <div class="main-content">
+                    <h1>builds [PoE] + [PoE 2]</h1>
+                    <p>i play a lot path of exile.</p>
+                    <hr>
+                    <a class="btn btn-secondary" href="#poe1">Path of Exile</a>
+                    <a class="btn btn-secondary" href="#poe2">Path of Exile 2</a>
+                    <hr>
+                    <section id="poe1">
+                        <h2>poe characters</h2>
+                        <p>some characters from past leagues of Path of Exile.</p>
+                    </section>
+                    <div class="dropdown-center">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-wide-connected me-2"></i>Builds
+                        </button>
+                        <!--figure out how to dynamically update which link is active in dropdown based on iframe content-->
+                        <ul class="dropdown-menu" data-bs-theme="dark">
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dce5">Settlers of Kalguur</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dce6">Legacy of Phrecia</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dce7">Delirium</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd1c">Necropolis</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd1f">Expedition</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd1b">Sanctum</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd19">Metamorph</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd18">Ritual</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd17">Harvest</a></li>
+                            <li><a class="dropdown-item" target="poe1frame" href="https://poe.ninja/pob/7dd1a">Crucible</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://www.pathofexile.com/account/view-profile/sinemora-4527/characters">Full Profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="container-fluid d-flex p-3">
+                        <iframe name="poe1frame" id="poe1Frame"
+                            src="https://poe.ninja/pob/7dce5"
+                            width=960
+                            height=800
+                            title="Character">
+                        </iframe>
+                    </div>
+                    <section id="poe2">
+                        <h2>poe2 characters</h2>
+                        <p>current character for Rise of the Abyssal in Path of Exile 2. second character was from game early access launch.</p>
+                    </section>
+                    <div class="dropdown-center">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-wide-connected me-2"></i>Builds
+                        </button>
+                        <ul class="dropdown-menu" data-bs-theme="dark">
+                            <li><a class="dropdown-item" target="poe2frame" href="https://poe.ninja/poe2/profile/sinemora-4527/character/orzkfjlasdkf">Rise of the Abyssal</a></li>
+                            <li><a class="dropdown-item" target="poe2frame" href="https://poe.ninja/poe2/pob/e5d4">Launch</a></li>
+                        </ul>
+                    </div>
+                    <div class="container-fluid d-flex p-3">
+                        <iframe name="poe2frame" id="poe2frame"
+                            src="https://poe.ninja/poe2/profile/sinemora-4527/character/orzkfjlasdkf"
+                            width=960
+                            height=800
+                            title="Character">
+                        </iframe>
+                    </div>
                 </div>
-            <hr>
-            <section id="poe2">
-                <h2>poe2 characters</h2>
-                <p>current character for Rise of the Abyssal in Path of Exile 2. second character was from game launch.</p>
-            </section>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-gear-wide-connected me-2"></i>Builds
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" target="poe2frame" href="https://poe.ninja/poe2/profile/sinemora-4527/character/orzkfjlasdkf">Rise of the Abyssal</a></li>
-                        <li><a class="dropdown-item" target="poe2frame" href="https://poe.ninja/poe2/pob/e5d4">Launch</a></li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="container-fluid">
-                    <iframe name="poe2frame" id="poe2frame"
-                    src="https://poe.ninja/poe2/profile/sinemora-4527/character/orzkfjlasdkf"
-                    width=1200
-                    height=800
-                    title="Character">
-                    </iframe>
-                </div>
+            </div>
         </div>
-        <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
+        <!--footer-->
+        <div class="footer-wrapper">
+            <footer>
+                <div class="footer-copyright">
+                    © 2025 Michael Chang. styling elements inspired by
+                    <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of
+                    <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+                </div>
+            </footer>
+        </div>
+
+        <!--scroll to top-->
+        <button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top">
             <i class="bi bi-caret-up-fill"></i>
         </button>
         <script>
